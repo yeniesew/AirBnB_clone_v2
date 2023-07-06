@@ -1,21 +1,22 @@
 #!/usr/bin/python3
 """Fabric script to generates a .tgz"""
 
-
-from fabric.api import *
-import os.path
-from os import path
-from datetime import datetime
-from os.path import exists
+#!/usr/bin/python3
+from fabric.api import local
+from time import strftime
+from datetime import date
 
 
 def do_pack():
-    """ creates tar archive"""
-    if path.exists("versions") is False:
-        local("mkdir versions")
-    date = datetime.now().strftime("%Y%m%d%H%M%S")
-    pathfile = "versions/web_static" + date + ".tgz"
-    local('tar cvfz ' + pathfile + ' web_static')
-    if exists(pathfile):
-        return (pathfile)
-    return None
+    """ A script that generates archive the contents of web_static folder"""
+
+    filename = strftime("%Y%m%d%H%M%S")
+    try:
+        local("mkdir -p versions")
+        local("tar -czvf versions/web_static_{}.tgz web_static/"
+              .format(filename))
+
+        return "versions/web_static_{}.tgz".format(filename)
+
+    except Exception as e:
+        return None
