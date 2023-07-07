@@ -7,16 +7,25 @@ $nginx_conf = "server {
     add_header X-Served-By ${hostname};
     root   /var/www/html;
     index  index.html index.htm;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 58452de58208bd138722359b40ab3bf1ab2d4fe3
     location /hbnb_static {
         alias /data/web_static/current;
         index index.html index.htm;
     }
+<<<<<<< HEAD
 
     location /redirect_me {
         return 301 http://cuberule.com/;
     }
 
+=======
+    location /redirect_me {
+        return 301 http://www.youtube.com/watch?v=QH2-TGUlwu4;
+    }
+>>>>>>> 58452de58208bd138722359b40ab3bf1ab2d4fe3
     error_page 404 /404.html;
     location /404 {
       root /var/www/html;
