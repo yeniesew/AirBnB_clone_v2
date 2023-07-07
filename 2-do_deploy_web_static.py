@@ -1,14 +1,22 @@
 #!/usr/bin/python3
+<<<<<<< HEAD
+=======
 '''
 fabric script to distribute an archive to web servers
 ----NEEDS TO REVISIT SCRIPT
 '''
 
+>>>>>>> 58452de58208bd138722359b40ab3bf1ab2d4fe3
 from fabric.api import put, run, local, env
 from os import path
 
 
+<<<<<<< HEAD
+env.hosts = ["54.167.24.215", "54.82.159.235"]
+
+=======
 env.hosts = ["34.229.184.253", "54.157.187.58"]
+>>>>>>> 58452de58208bd138722359b40ab3bf1ab2d4fe3
 
 def do_deploy(archive_path):
     """Fabric script that distributes
