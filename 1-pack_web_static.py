@@ -1,10 +1,6 @@
 #!/usr/bin/python3
-<<<<<<< HEAD
-=======
 """Fabric script to generates a .tgz"""
 
-#!/usr/bin/python3
->>>>>>> 58452de58208bd138722359b40ab3bf1ab2d4fe3
 from fabric.api import local
 from time import strftime
 from datetime import date
