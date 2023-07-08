@@ -24,3 +24,8 @@ The app can be accessed at 0.0.0.0:5000/hbnb.
 <p>sceenshots:</p>
 </body>
 </html>
+![Uploading hbnb_screenshot_1.png…]()
+![Uploading hbnb_screenshot_0.png…]()
+![hbnb_screenshot_2](https://github.com/Biny19/AirBnB_clone_v2/assets/99319057/7f73130a-116c-49fc-9d60-b18507fdf99c)
+
+
